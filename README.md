@@ -1,7 +1,4 @@
 # Oneplus 3/t nfc sim enabler
-
----
-# Oneplus 3/t nfc sim enabler
 ## Description
 Updated version of snowwolf725's module, enable sim nfc on oneplus 3/3t
 ## Changelog
