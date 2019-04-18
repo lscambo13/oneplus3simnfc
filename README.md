@@ -16,4 +16,4 @@
 <p align="center">If you want to use HamiPay, remember to give smartcardservice permission in settings-apps-app permissions-additional permissions</p>
 <br>
 <h3 align="center"><strong>Issue report</strong></h3><br>
-<p align="center">Please report issue at [Github](https://github.com/Magisk-Modules-Repo/OnePlus-3-t-NFC-Sim-Enabler) or [XDA thread](https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-themes-apps--mods/mod-nfc-sim-enabler-1-3-t-oreo-7-8-2018-t3825878) </p>
+<p align="center">Please report issue at [Github] (https://github.com/Magisk-Modules-Repo/OnePlus-3-t-NFC-Sim-Enabler) or [XDA thread] (https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-themes-apps--mods/mod-nfc-sim-enabler-1-3-t-oreo-7-8-2018-t3825878) </p>
