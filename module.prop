@@ -1,7 +1,7 @@
 id=oneplus3simnfc
 name=OnePlus 3/t NFC Sim Enabler
-version=v1.1
-versionCode=2
+version=v1.2
+versionCode=3
 author=snowwolf725, mk5566
 description=Updated version of snowwolf725's module, enable sim nfc on oneplus 3/3t
-minMagisk=1500
+minMagisk=1700
