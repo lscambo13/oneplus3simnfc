@@ -51,8 +51,6 @@ REPLACE_EXAMPLE="
 
 # Construct your own list here
 REPLACE="
-/system/etc/libnfc-nxp.conf
-/system/priv-app/SmartcardService
 "
 
 ##########################################################################################
@@ -125,7 +123,7 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print " Oneplus 3/3t sim nfc enabler  "
+  ui_print "     NFC-SIM Pie for OP3/3T    "
   ui_print "*******************************"
 }
 
@@ -136,6 +134,9 @@ on_install() {
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  custom_variables
+  device_check
+  api_check
 }
 
 # Only some special files require specific permissions
@@ -154,3 +155,26 @@ set_permissions() {
 }
 
 # You can add more functions to assist your custom script code
+
+custom_variables() {
+if [ -f vendor/build.prop ]; then BUILDS="/system/build.prop vendor/build.prop"; else BUILDS="/system/build.prop"; fi
+  OP3=$(grep -E "ro.product.device=oneplus3|ro.product.device=OnePlus3|ro.product.device=OnePlus3T" $BUILDS)
+}
+
+device_check() {
+  if [ -n "$OP3" ]; then
+    break
+  else
+    abort "Your device is not a OnePlus 3/3T"
+  fi
+}
+
+# this function allows installation just with API level that matches the requisites
+
+api_check() {
+  if [ "$API" -eq 28 ]; then
+    break
+  else
+    abort "This module is only for devices running Pie"
+  fi
+}
