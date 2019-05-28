@@ -6,11 +6,12 @@
 <code>- v1 first release</code><br>
 <code>- V1.1 fix wrong smartcardservice file and update readme</code><br>
 <code>- v1.2 update for Magisk 19</code>
+<code>- v1.3 update for Android Pie</code>
 <br>
 <h3 ><strong>Requirements</strong></h3><br>
 <code>- NFC-SIM</code><br>
 <code>- Oneplus 3/3T</code><br>
-<code>- Oxygen OS Oreo</code>(This is what I use, maybe work for Nougat)
+<code>- Oxygen OS Pie</code>
 <br>
 <h3><strong>Instructions</strong></h3><br>
 <p>If you want to use HamiPay, remember to give smartcardservice permission in settings-apps-app permissions-additional permissions</p>
